@@ -1,0 +1,11 @@
+/workspaces/rust-demo/hello-marco/target/debug/deps/anstyle_parse-78fbbb758af40979.d: /home/vscode/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anstyle-parse-0.2.7/src/lib.rs /home/vscode/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anstyle-parse-0.2.7/src/params.rs /home/vscode/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anstyle-parse-0.2.7/src/state/mod.rs /home/vscode/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anstyle-parse-0.2.7/src/state/definitions.rs /home/vscode/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anstyle-parse-0.2.7/src/state/table.rs
+
+/workspaces/rust-demo/hello-marco/target/debug/deps/libanstyle_parse-78fbbb758af40979.rlib: /home/vscode/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anstyle-parse-0.2.7/src/lib.rs /home/vscode/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anstyle-parse-0.2.7/src/params.rs /home/vscode/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anstyle-parse-0.2.7/src/state/mod.rs /home/vscode/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anstyle-parse-0.2.7/src/state/definitions.rs /home/vscode/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anstyle-parse-0.2.7/src/state/table.rs
+
+/workspaces/rust-demo/hello-marco/target/debug/deps/libanstyle_parse-78fbbb758af40979.rmeta: /home/vscode/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anstyle-parse-0.2.7/src/lib.rs /home/vscode/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anstyle-parse-0.2.7/src/params.rs /home/vscode/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anstyle-parse-0.2.7/src/state/mod.rs /home/vscode/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anstyle-parse-0.2.7/src/state/definitions.rs /home/vscode/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anstyle-parse-0.2.7/src/state/table.rs
+
+/home/vscode/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anstyle-parse-0.2.7/src/lib.rs:
+/home/vscode/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anstyle-parse-0.2.7/src/params.rs:
+/home/vscode/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anstyle-parse-0.2.7/src/state/mod.rs:
+/home/vscode/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anstyle-parse-0.2.7/src/state/definitions.rs:
+/home/vscode/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anstyle-parse-0.2.7/src/state/table.rs:
