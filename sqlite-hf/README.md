@@ -63,15 +63,34 @@ lyrics.txt ──>   │ read_lyrics() │
 - Rust 1.85+ (edition 2024)
 - libtorch (C++ PyTorch backend, required by rust-bert)
 
+## Why PyTorch is installed in the devcontainer
+
+Despite being a Rust project, rust-bert has a hard dependency chain:
+
+```
+rust-bert → tch-rs → torch-sys → libtorch (C++ library)
+```
+
+libtorch is the C++ math engine that powers PyTorch. It is not Python — it is the
+compiled C++ core that runs Transformer models. When `torch-sys` builds, it looks
+for libtorch in this order:
+
+1. `LIBTORCH` env var pointing to a local libtorch installation
+2. `LIBTORCH_USE_PYTORCH=1` — reuses libtorch bundled inside a pip-installed PyTorch
+3. If neither is set, it downloads ~2GB of libtorch during `cargo build`
+
+Option 3 crashes Codespaces (runs out of disk/RAM). The devcontainer uses option 2:
+it pre-installs CPU-only PyTorch via pip so that `torch-sys` links against its bundled
+libtorch instead of downloading it at build time.
+
 ## Setup
 
 ```bash
-# Option A: Let rust-bert download libtorch automatically via PyTorch
+# If running locally (not in Codespaces), install the libtorch dependency:
 export LIBTORCH_USE_PYTORCH=1
 pip install torch --index-url https://download.pytorch.org/whl/cpu
 
-# Option B: Download libtorch manually
-# See https://pytorch.org for your platform
+# If running in Codespaces, libtorch is already pre-installed by the devcontainer.
 
 # Build
 cargo build --release
