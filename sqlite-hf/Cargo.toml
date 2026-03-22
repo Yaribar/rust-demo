@@ -7,3 +7,4 @@ edition = "2024"
 rust-bert = "0.22"
 clap = { version = "4.5", features = ["derive"] }
 sqlite = "0.36"
+console = { version = "0.16", features = ["std"] }

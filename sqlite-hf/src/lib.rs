@@ -88,7 +88,7 @@ pub fn classify_lyrics(lyrics: Vec<String>) -> Vec<Vec<Label>> {
     // Create the zero shot classification model with default config
     let zero_shot_model = ZeroShotClassificationModel::new(Default::default()).unwrap();
     // Run the model: classify the lyrics against the candidate labels
-    let output = zero_shot_model.predict_multilabel([lyrics], candidate_labels, None, 128);
+    let output = zero_shot_model.predict_multilabel([lyrics], candidate_labels, None, 128).unwrap();
     // Return the classification results
     output
 }
